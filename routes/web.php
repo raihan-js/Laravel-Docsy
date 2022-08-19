@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontendController::class, 'showHomePage'])->name('home.page');
 Route::get('login', [FrontendController::class, 'showLoginPage'])->name('login.page')->middleware('patient.login.redirect');
 
+//Forgot password route
+Route::get('forgot-password', [FrontendController::class, 'forgotPasswordShow'])->name('forgot.password')->middleware('patient.login.redirect');
+
 //Patient account activation
 Route::get('patient_account_activation/{token?}', [PatientAuthController::class, 'patientAccountActivation'])->name('patient.account.activation');
 

@@ -36,4 +36,9 @@ class FrontendController extends Controller
     {
         return view('frontend.doctor.dashboard');
     }
+
+    public function forgotPasswordShow()
+    {
+        return view('frontend.forgot-password');
+    }
 }
