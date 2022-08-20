@@ -27,7 +27,8 @@ return new class extends Migration
             $table->string('city')->nullable();
             $table->string('country')->nullable();
             $table->string('access_token')->nullable();
-            $table->string('oauth_id')->nullable();
+            $table->string('facebook_id')->nullable();
+            $table->string('google_id')->nullable();
             $table->boolean('status')->default(false);
             $table->boolean('trash')->default(false);
             $table->timestamps();

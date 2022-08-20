@@ -48,3 +48,9 @@ Route::get('doctor-dashboard', [FrontendController::class, 'showDoctorDashboard'
 /**Social Login Routes (Facebook) */
 Route::get('facebook-login-request', [SocialLoginController::class, 'sendFacebookLoginRequest'])->name('facebook.login.request');
 Route::get('facebook-login-system', [SocialLoginController::class, 'loginWithFacebook'])->name('facebook.login');
+
+
+
+/**Social Login Routes (Google) */
+Route::get('google-login-request', [SocialLoginController::class, 'sendGoogleLoginRequest'])->name('google.login.request');
+Route::get('google-login-system', [SocialLoginController::class, 'loginWithGoogle'])->name('google.login');
