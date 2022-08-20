@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\PatientAuthController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\PatientProfileController;
+use App\Http\Controllers\SocialLoginController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -42,3 +43,8 @@ Route::get('doctor-register', [FrontendController::class, 'showDoctorRegister'])
 Route::get('doctor-dashboard', [FrontendController::class, 'showDoctorDashboard'])->name('doctor.dashboard');
 
 /*--------------------------------------------------------------------- */
+
+
+/**Social Login Routes (Facebook) */
+Route::get('facebook-login-request', [SocialLoginController::class, 'sendFacebookLoginRequest'])->name('facebook.login.request');
+Route::get('facebook-login-system', [SocialLoginController::class, 'loginWithFacebook'])->name('facebook.login');

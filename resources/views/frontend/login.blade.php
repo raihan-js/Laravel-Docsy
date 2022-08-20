@@ -36,11 +36,14 @@
                                     <span class="span-or">or</span>
                                 </div>
                                 <div class="row form-row social-login">
-                                    <div class="col-6">
-                                        <a href="#" class="btn btn-facebook btn-block"><i class="fab fa-facebook-f mr-1"></i> Login</a>
+                                    <div class="col-4">
+                                        <a href="{{ route('facebook.login.request') }}" class="btn btn-facebook btn-block"><i class="fab fa-facebook-f mr-1"></i> Login</a>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-4">
                                         <a href="#" class="btn btn-google btn-block"><i class="fab fa-google mr-1"></i> Login</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="btn btn-google bg-dark btn-block"><i class="fab fa-github mr-1"></i> Login</a>
                                     </div>
                                 </div>
                                 <div class="text-center dont-have">Don’t have an account? <a href="{{ route('patient.register') }}">Register</a></div>

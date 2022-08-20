@@ -24,7 +24,7 @@
                                     <label class="focus-label">Email</label>
                                 </div>
                                 <div class="text-right">
-                                    <a class="forgot-link" href="login.html">Remember your password?</a>
+                                    <a class="forgot-link" href="{{ route('login.page') }}">Remember your password?</a>
                                 </div>
                                 <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Reset Password</button>
                             </form>
