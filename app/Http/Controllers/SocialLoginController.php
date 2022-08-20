@@ -27,8 +27,9 @@ class SocialLoginController extends Controller
         } else {
             $patient = Patient::create([
                 'name'      => $user->name,
-                'email'     => $user->email, //email will not be fetched untill the permission turned on from FB
+                'email'     => $user->email,
                 'password'  => '',
+                'phone'     => '',
                 'status'    => true,
                 'oauth_id'  => $user->id,
             ]);
