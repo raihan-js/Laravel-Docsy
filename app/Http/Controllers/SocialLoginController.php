@@ -15,7 +15,7 @@ class SocialLoginController extends Controller
         return Socialite::driver('facebook')->redirect();
     }
 
-    //Facebook login info
+    //Facebook login information
     public function loginWithFacebook()
     {
         $user = Socialite::driver('facebook')->user();
