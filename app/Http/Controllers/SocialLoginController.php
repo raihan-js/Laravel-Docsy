@@ -9,7 +9,7 @@ use Laravel\Socialite\Facades\Socialite;
 
 class SocialLoginController extends Controller
 {
-    //send request to FB
+    //send request to Facebook
     public function sendFacebookLoginRequest()
     {
         return Socialite::driver('facebook')->redirect();
